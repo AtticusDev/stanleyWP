@@ -77,5 +77,13 @@
 	}
 }
 
+.blog-post {
+  margin: 0;
+  padding: 2rem;
+
+  &:nth-child(odd) {
+  background-color: $gray-100;
+  }
+}
 
 

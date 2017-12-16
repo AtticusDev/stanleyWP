@@ -9,7 +9,10 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('blog-post'); ?>>
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-8">
 
 	<?php if ( has_post_thumbnail() && is_single() ) : ?>
 		<div class="post-thumbnail">
@@ -57,4 +60,7 @@
 	<footer class="entry-footer">
 		<?php stanleywp_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
+		</div><!-- .col-md-8 -->
+	</div><!-- .row -->
+</div><!-- .container -->
 </article><!-- #post-## -->

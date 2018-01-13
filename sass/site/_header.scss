@@ -1,8 +1,14 @@
 .site-header {
 	margin-bottom: 3em;
+	h1 {
+		text-align:center;
+	}
+	p {
+		text-align:center;
+	}
 }
 .blog {
-	.site-header{
+	.site-header {
 	margin-bottom: 0;
 	}
 }
@@ -10,4 +16,7 @@
 	a {
 	color: $white;
 	}
+}
+.navbar {
+	padding: 0.5rem 1rem;
 }

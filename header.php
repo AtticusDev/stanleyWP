@@ -16,6 +16,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
+<link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/c53e7721-32a7-4362-a249-cfdfcc6981a9.css"/>
+
 <?php wp_head(); ?>
 </head>
 
@@ -23,19 +25,31 @@
 <div id="page" class="site">
 
 	<header id="masthead" class="site-header" role="banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">+44 (0) 20 7034 8284<br />
+john.deanfield@gmail.com</div>
+				<div class="col-md-6 text-right"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/google-plus-icon.jpg"><img src=<?php bloginfo('stylesheet_directory'); ?>/images/linked-in-icon.jpg"></div>			
+			</div>
+
+			<div class="row justify-content-center site-title">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><h1>Professor John Deanfield</h1>
+			   	<p>PROFESSOR OF CARDIOLOGY</p></a>
+			</div>
+		</div>
+
 	    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 	    	<div class="container">
-			   <div class="navbar-brand mb-0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></div>
-				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			   				<button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>
-		   		<div class="collapse navbar-collapse" id="navbarNav">
+		   		<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
 	            <?php
 	            $args = array(
 	              'theme_location' => 'primary',
 	              'depth'      => 2,
 	              'container'  => false,
-	              'menu_class'     => 'navbar-nav ml-auto',
+	              'menu_class'     => 'navbar-nav',
 	              'walker'     => new Bootstrap_Walker_Nav_Menu()
 	              );
 	            if (has_nav_menu('primary')) {

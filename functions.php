@@ -1,13 +1,13 @@
 <?php
 /**
- * StanleyWP functions and definitions
+ * jdeanfield functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package StanleyWP
+ * @package jdeanfield
  */
 
-if ( ! function_exists( 'stanleywp_setup' ) ) :
+if ( ! function_exists( 'jdeanfield_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -15,14 +15,14 @@ if ( ! function_exists( 'stanleywp_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function stanleywp_setup() {
+function jdeanfield_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on StanleyWP, use a find and replace
-	 * to change 'stanleywp' to the name of your theme in all the template files.
+	 * If you're building a theme based on jdeanfield, use a find and replace
+	 * to change 'jdeanfield' to the name of your theme in all the template files.
 	 */
-	load_theme_textdomain( 'stanleywp', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'jdeanfield', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -44,8 +44,9 @@ function stanleywp_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary', 'stanleywp' ),
+		'primary' => esc_html__( 'Primary', 'jdeanfield' ),
 	) );
+
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments
@@ -60,7 +61,7 @@ function stanleywp_setup() {
 	) );
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'stanleywp_custom_background_args', array(
+	add_theme_support( 'custom-background', apply_filters( 'jdeanfield_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
@@ -69,7 +70,7 @@ function stanleywp_setup() {
 	add_theme_support( 'customize-selective-refresh-widgets' );
 }
 endif;
-add_action( 'after_setup_theme', 'stanleywp_setup' );
+add_action( 'after_setup_theme', 'jdeanfield_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -78,10 +79,10 @@ add_action( 'after_setup_theme', 'stanleywp_setup' );
  *
  * @global int $content_width
  */
-function stanleywp_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'stanleywp_content_width', 640 );
+function jdeanfield_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'jdeanfield_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'stanleywp_content_width', 0 );
+add_action( 'after_setup_theme', 'jdeanfield_content_width', 0 );
 
 
 /**

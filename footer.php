@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package StanleyWP
+ * @package jdeanfield
  */
 
 ?>
@@ -15,7 +15,14 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="container">
-			<div class="row">
+			<div class="row text-center">
+				<div class="col-md-12 text-center site-title">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><h1 class="mb-0">Professor John Deanfield</h1>
+			   	<p>PROFESSOR OF CARDIOLOGY<br>
+			   <span class="qualifications">BA Hons. MB.BChir (Cantab), FRCP, FACC, FESC</span></a>
+			   </div>
+			</div>
+			<div class="row text-center">
 				<div class="col-md-4">
 					<?php dynamic_sidebar( 'footer-1' ); ?>
 				</div>
@@ -27,11 +34,6 @@
 				</div>
 
 			</div>
-			<div class="site-info">
-				&copy; <?php bloginfo( 'name' );
-						echo ' - ';
-						echo date("Y"); ?>
-			</div><!-- .site-info -->
 		</div><!--  .container -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

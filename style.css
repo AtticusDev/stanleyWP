@@ -1,19 +1,19 @@
 /*
-Theme Name: StanleyWP
-Theme URI: http://StanleyWP.com
+Theme Name: jdeanfield
+Theme URI: http://jdeanfield.com
 Author: Brad Williams
 Author URI: http://braginteractive.com
 Description: Bootstrap 4 WordPress Theme
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: StanleyWP
+Text Domain: jdeanfield
 Tags:
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-StanleyWP is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+jdeanfield is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -6742,9 +6742,9 @@ a.text-dark:focus, a.text-dark:hover {
   @media (min-width: 768px) {
     .content-area {
       -webkit-box-flex: 0;
-          -ms-flex: 0 0 66.66666667%;
-              flex: 0 0 66.66666667%;
-      max-width: 66.66666667%; } }
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
+      max-width: 100%; } }
 
 .widget-area {
   position: relative;
@@ -6865,7 +6865,7 @@ a.text-dark:focus, a.text-dark:hover {
   background-color: #f8f9fa; }
 
 body {
-  font-family: 'ITC Souvenir W01 Medium';
+  font-family: 'ITC Souvenir W01 Light';
   background-color: #E7E3E1; }
 
 /*--------------------------------------------------------------
@@ -6901,7 +6901,8 @@ body {
   .site-header h1 {
     text-align: center; }
   .site-header p {
-    text-align: center; }
+    text-align: center;
+    color: #343a40; }
 
 .blog .site-header {
   margin-bottom: 0; }
@@ -6918,8 +6919,18 @@ body {
 .site-footer {
   padding: 4rem 0;
   margin-top: 4rem;
-  background-color: #2f2f2f;
-  color: #fff; }
+  color: #343a40; }
+  .site-footer .container {
+    border-top: 1px solid #000;
+    padding-top: 2rem; }
+    .site-footer .container ul {
+      list-style: none; }
+    .site-footer .container .menu {
+      padding-left: 0; }
+    .site-footer .container .blue-title {
+      color: #457AAD; }
+    .site-footer .container .jdqual {
+      color: #343a40; }
 
 .site-content {
   word-break: break-word; }

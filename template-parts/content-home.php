@@ -18,7 +18,10 @@
 				?>
 			</div>
 			<div class="col-md-6">
-		        <?php the_post_thumbnail('full', array('class' => '')); ?>
+				<div class="item">
+			        <?php the_post_thumbnail('full', array('class' => '')); ?>
+				<div class="item-overlay top"></div>
+			    </div>
 
 			</div><!-- .entry-content -->
 		</div>

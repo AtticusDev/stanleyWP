@@ -6882,6 +6882,27 @@ body {
   font-size: 0.9rem; }
 
 /* home page */
+/* image enlargement */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.item {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  width: 540px; }
+
+.item img {
+  max-width: 100%;
+  transition: all 0.5s; }
+
+.item:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); }
+
+/* image enlargement end */
 .divider-rule {
   padding-bottom: 2rem;
   border-bottom: 1px solid #000; }

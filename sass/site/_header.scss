@@ -4,7 +4,6 @@
 		text-align:center;
 	}
 	p {
-		text-align:center;
 		color: $gray-800;
 	}
 }
@@ -20,4 +19,25 @@
 }
 .navbar {
 	padding: 0.5rem 1rem;
+}
+
+.header-contact{
+	text-align: left;
+}
+.header-social{
+	text-align: right;
+}
+@media (max-width: 576px){
+	.site-header {
+		margin-bottom:1rem;
+	}
+	.header-contact {
+		text-align: center;
+	}
+	.header-social{
+		display:none;
+	}
+	.site-header h1 {
+		font-size:1.5rem;
+	}
 }

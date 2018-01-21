@@ -27,12 +27,12 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="container">
 			<div class="row mt-3">
-				<div class="col-md-6"><p class="text-primary text-left">+44 (0) 20 7034 8284<br />
+				<div class="col-md-6 col-sm-12 col-xs-12 header-contact"><p class="text-primary">+44 (0) 20 7034 8284<br />
 john.deanfield@gmail.com</p></div>
-				<div class="col-md-6 text-right"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/google-plus-icon.jpg"><img src=<?php bloginfo('stylesheet_directory'); ?>/images/linked-in-icon.jpg"></div>			
+				<div class="col-md-6 col-sm-12 col-xs-12 header-social"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/google-plus-icon.jpg"><img src=<?php bloginfo('stylesheet_directory'); ?>/images/linked-in-icon.jpg"></div>			
 			</div>
 
-			<div class="row justify-content-center site-title">
+			<div class="row justify-content-center text-center site-title">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><h1 class="mb-0">Professor John Deanfield</h1>
 			   	<p>PROFESSOR OF CARDIOLOGY</p></a>
 			</div>

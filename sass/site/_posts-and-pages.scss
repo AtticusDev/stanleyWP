@@ -1,3 +1,20 @@
+/* Type styles */
+
+h2:first-line
+{
+  color: $custom  
+}
+h3
+{
+  color: $custom;
+  font-size: 1.5rem;
+}
+h6
+{
+  font-size:0.8rem;
+  margin-top: 1rem;
+}
+
 .sticky {
 	display: block;
 }
@@ -90,5 +107,78 @@
 body {
   font-family:'ITC Souvenir W01 Light';
   background-color:#E7E3E1;
+  font-size: 0.9rem;
+}
+
+/* home page */
+
+.divider-rule {
+  padding-bottom:2rem;
+    border-bottom: 1px solid #000;
+}
+
+.intro-text {
+  font-size: 1.6rem;
+  color: $custom;
+  padding:4rem;
+}
+
+@media (max-width: 576px){
+  .intro-text {
+    font-size:1.2rem;
+    padding:0.5rem;
+  }
+}
+.service-tab
+{
+ width:75%;
+ padding:0.5rem;
+ color: #ffffff;
+ margin: 1rem 0;
+}
+.bg-blue {
+    background-color: $custom;
+  }
+.bg-beige {
+    background-color: $custom-beige;
+}
+.bg-white {
+  background-color: #ffffff;
+}
+.txt-white {
+  color: #ffffff;
+}
+.txt-blue {
+  color: $custom;
+}
+.blue-triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 19px solid transparent;
+  border-left: 20px solid $custom;
+  border-bottom: 19px solid transparent;
+ margin: 1rem 0;
+}
+.beige-triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 19px solid transparent;
+  border-left: 20px solid $custom-beige;
+  border-bottom: 19px solid transparent;
+ margin: 1rem 0;
+}
+.white-triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 19px solid transparent;
+  border-left: 20px solid #ffffff;
+  border-bottom: 19px solid transparent;
+ margin: 1rem 0;
+}
+
+.treatment-panels
+{
+  padding:3rem;
+  margin: 2rem 0;
 }
 

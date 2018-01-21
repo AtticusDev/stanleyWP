@@ -6780,6 +6780,18 @@ a.text-dark:focus, a.text-dark:hover {
 /*--------------------------------------------------------------
 ## Posts and Pages
 --------------------------------------------------------------*/
+/* Type styles */
+h2:first-line {
+  color: #457AAD; }
+
+h3 {
+  color: #457AAD;
+  font-size: 1.5rem; }
+
+h6 {
+  font-size: 0.8rem;
+  margin-top: 1rem; }
+
 .sticky {
   display: block; }
 
@@ -6866,7 +6878,72 @@ a.text-dark:focus, a.text-dark:hover {
 
 body {
   font-family: 'ITC Souvenir W01 Light';
-  background-color: #E7E3E1; }
+  background-color: #E7E3E1;
+  font-size: 0.9rem; }
+
+/* home page */
+.divider-rule {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #000; }
+
+.intro-text {
+  font-size: 1.6rem;
+  color: #457AAD;
+  padding: 4rem; }
+
+@media (max-width: 576px) {
+  .intro-text {
+    font-size: 1.2rem;
+    padding: 0.5rem; } }
+
+.service-tab {
+  width: 75%;
+  padding: 0.5rem;
+  color: #ffffff;
+  margin: 1rem 0; }
+
+.bg-blue {
+  background-color: #457AAD; }
+
+.bg-beige {
+  background-color: #c7beb9; }
+
+.bg-white {
+  background-color: #ffffff; }
+
+.txt-white {
+  color: #ffffff; }
+
+.txt-blue {
+  color: #457AAD; }
+
+.blue-triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 19px solid transparent;
+  border-left: 20px solid #457AAD;
+  border-bottom: 19px solid transparent;
+  margin: 1rem 0; }
+
+.beige-triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 19px solid transparent;
+  border-left: 20px solid #c7beb9;
+  border-bottom: 19px solid transparent;
+  margin: 1rem 0; }
+
+.white-triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 19px solid transparent;
+  border-left: 20px solid #ffffff;
+  border-bottom: 19px solid transparent;
+  margin: 1rem 0; }
+
+.treatment-panels {
+  padding: 3rem;
+  margin: 2rem 0; }
 
 /*--------------------------------------------------------------
 ## Widgets
@@ -6901,7 +6978,6 @@ body {
   .site-header h1 {
     text-align: center; }
   .site-header p {
-    text-align: center;
     color: #343a40; }
 
 .blog .site-header {
@@ -6912,6 +6988,22 @@ body {
 
 .navbar {
   padding: 0.5rem 1rem; }
+
+.header-contact {
+  text-align: left; }
+
+.header-social {
+  text-align: right; }
+
+@media (max-width: 576px) {
+  .site-header {
+    margin-bottom: 1rem; }
+  .header-contact {
+    text-align: center; }
+  .header-social {
+    display: none; }
+  .site-header h1 {
+    font-size: 1.5rem; } }
 
 /*--------------------------------------------------------------
 ## Footer

@@ -6966,6 +6966,13 @@ body {
   padding: 3rem;
   margin: 2rem 0; }
 
+/* Contact page */
+.txt-sml {
+  font-size: 0.8rem; }
+
+.btn.btn-square {
+  border-radius: 0; }
+
 /*--------------------------------------------------------------
 ## Widgets
 --------------------------------------------------------------*/

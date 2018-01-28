@@ -41,5 +41,24 @@
 <?php wp_footer(); ?>
 
 </body>
+    
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("stickynav");
+var content = document.getElementById("content");
+
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+    content.classList.add("site-content-sticky")
+  } else {
+    navbar.classList.remove("sticky");
+    content.classList.remove("site-content-sticky")
+  }
+}
+</script>
 
 </html>

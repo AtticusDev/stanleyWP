@@ -1,8 +1,9 @@
 /* Type styles */
 
+
 h2:first-line
 {
-  color: $custom  
+  color: $custom;  
 }
 h3
 {
@@ -15,9 +16,13 @@ h6
   margin-top: 1rem;
 }
 
-.sticky {
-	display: block;
+@media (max-width: 576px){
+  h2 {
+    font-size:1.2rem;
+    padding:0.2rem;
+  }
 }
+
 
 .byline,
 .updated:not(.published){
@@ -110,6 +115,32 @@ body {
   font-size: 0.9rem;
 }
 
+
+
+/*navigation */
+
+.site-content{
+  padding-top: 2rem;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:3;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.site-content-sticky {
+  padding-top: 80px;
+}
+
+/* end navigation */
+
+
+
+
 /* home page */
 
 /* image enlargement */
@@ -125,7 +156,7 @@ body {
   position: relative;
   margin: 0;
   overflow: hidden;
-  width: 540px;
+  width: 100%;
 }
 .item img {
   max-width: 100%;

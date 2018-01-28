@@ -35,15 +35,15 @@ john.deanfield@gmail.com</p></div>
 			<div class="row justify-content-center text-center site-title">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><h1 class="mb-0">Professor John Deanfield</h1>
 			   	<p>PROFESSOR OF CARDIOLOGY</p></a>
+				</div>
 			</div>
-		</div>
 
-	    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+	    <nav id="stickynav" class="navbar navbar-expand-lg navbar-dark bg-primary">
 	    	<div class="container">
-			   				<button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
+			   				<button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon "></span>
 				</button>
-		   		<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+		   		<div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
 	            <?php
 	            $args = array(
 	              'theme_location' => 'primary',

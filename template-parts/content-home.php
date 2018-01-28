@@ -17,7 +17,7 @@
 					the_content();
 				?>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-6 col-sm-12">
 				<div class="item">
 			        <?php the_post_thumbnail('full', array('class' => '')); ?>
 				<div class="item-overlay top"></div>
@@ -29,8 +29,11 @@
 	<div class="container divider-rule">
 		<div class="row">
 			<div class="col-md-12 text-center mt-4 mb-4">
-				<h2>Understanding the opportunity<br />
-for a better and longer life</h2>
+	<?php
+		$treatments_title = get_field( "treatments_title" );
+	?>
+
+				<h2><?php echo $treatments_title ?></h2>
 			</div>		
 		</div>
 		<div class="row">
